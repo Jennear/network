@@ -19,7 +19,7 @@ cat ~/.ssh/id_rsa.pub | ssh remote_username@server_ip_address "mkdir -p ~/.ssh &
 
 The .ssh directory permissions should be 700 (drwx------). 
 The public key (.pub file) should be 644 (-rw-r--r--). 
-The private key (id_rsa) on the client host 
+The private key (id_rsa) on the client host 600
 The authorized_keys file on the server, should be 600 (-rw-------).
 
 sudo systemctl restart ssh
